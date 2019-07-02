@@ -120,10 +120,10 @@ class PlayerAll extends Component {
       <>
       <div className="player-all dashboard-div">
         <div className="header">
-          <p>NFL - General Data</p>
+          <p className="title">NFL - General Data</p>
         </div>
         <form className="form" action="#" onSubmit={this.onFormSubmit}>
-        <div className="row sel">
+        <div className="selection">
           <label className="label">
             Rushing yards
             <input

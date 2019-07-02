@@ -87,7 +87,7 @@ onChange = (e) => {
       <>
       <div className="player dashboard-div">
         <div className="header">
-          <p>NFL - General Data</p>
+          <p>Player Data</p>
           <form action="#">
             <select className="sel" id="player" onChange={this.handleOnSelect}>
             <option value=''>{'NFL-Player'}</option>
