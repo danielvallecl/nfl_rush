@@ -5,6 +5,8 @@
  * @version: 1.0
  */
 
+import './Player.scss';
+
 import React, { Component } from 'react';
 
 class PlayerAll extends Component {
