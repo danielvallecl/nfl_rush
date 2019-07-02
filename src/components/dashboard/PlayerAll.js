@@ -121,99 +121,99 @@ class PlayerAll extends Component {
       <div className="player-all dashboard-div">
         <div className="header">
           <p>NFL - General Data</p>
-          <form action="#" onSubmit={this.onFormSubmit}>
-          <div className="row sel">
-            <label className="label">
-              Rushing yards
-              <input
-                className="check"
-                type="checkbox"
-                name="rush_yds"
-                onChange={this.onSortChange}
-                onClick={this.clearForm}
-                value={this.state.sort_options['rush_yds']}
-              />
-            </label>
-            <label className="label">
-              Longest rush
-              <input
-                className="check"
-                type="checkbox"
-                name="lng_rush"
-                onChange={this.onSortChange}
-                onClick={this.clearForm}
-                value={this.state.sort_options['lng_rush']}
-              />
-            </label>
-            <label className="label">
-              Total rushing TD
-              <input
-                className="check"
-                type="checkbox"
-                name="rush_td"
-                onChange={this.onSortChange}
-                onClick={this.clearForm}
-                value={this.state.sort_options['rush_td']}
-              />
-            </label>
-            <label className="label">
-              Ascending
-              <input
-                className="check"
-                type="checkbox"
-                name="ascending"
-                onChange={this.onSortChange}
-                value={this.state.sort_options['ascending']}
-              />
-            </label>
-            </div>
-              <div id="list">
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Name</th>
-                      <th>Team</th>
-                      <th>Pos</th>
-                      <th>Att</th>
-                      <th>Att/G</th>
-                      <th>Yds</th>
-                      <th>Avg</th>
-                      <th>Yds/G</th>
-                      <th>TD</th>
-                      <th>Lng</th>
-                      <th>1st</th>
-                      <th>1st%</th>
-                      <th>20+</th>
-                      <th>40+</th>
-                      <th>FUM</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                  {JSON.parse(localStorage.getItem('players_array')).map((player, key) => {
-                    return(
-                    <tr key={key}>
-                      <td>{ player['Player'] }</td>
-                      <td>{ player['Team'] }</td>
-                      <td>{ player['Pos'] }</td>
-                      <td>{ player['Att'] }</td>
-                      <td>{ player['Att/G'] }</td>
-                      <td>{ player['Yds'] }</td>
-                      <td>{ player['Avg'] }</td>
-                      <td>{ player['Yds/G'] }</td>
-                      <td>{ player['TD'] }</td>
-                      <td>{ player['Lng'] }</td>
-                      <td>{ player['1st'] }</td>
-                      <td>{ player['1st%'] }</td>
-                      <td>{ player['20+'] }</td>
-                      <td>{ player['40+'] }</td>
-                      <td>{ player['FUM'] }</td>
-                    </tr>
-                  )})}
-                  </tbody>
-                </table>
-              </div>
-          </form>
         </div>
+        <form action="#" onSubmit={this.onFormSubmit}>
+        <div className="row sel">
+          <label className="label">
+            Rushing yards
+            <input
+              className="check"
+              type="checkbox"
+              name="rush_yds"
+              onChange={this.onSortChange}
+              onClick={this.clearForm}
+              value={this.state.sort_options['rush_yds']}
+            />
+          </label>
+          <label className="label">
+            Longest rush
+            <input
+              className="check"
+              type="checkbox"
+              name="lng_rush"
+              onChange={this.onSortChange}
+              onClick={this.clearForm}
+              value={this.state.sort_options['lng_rush']}
+            />
+          </label>
+          <label className="label">
+            Total rushing TD
+            <input
+              className="check"
+              type="checkbox"
+              name="rush_td"
+              onChange={this.onSortChange}
+              onClick={this.clearForm}
+              value={this.state.sort_options['rush_td']}
+            />
+          </label>
+          <label className="label">
+            Ascending
+            <input
+              className="check"
+              type="checkbox"
+              name="ascending"
+              onChange={this.onSortChange}
+              value={this.state.sort_options['ascending']}
+            />
+          </label>
+          </div>
+            <div id="list">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Team</th>
+                    <th>Pos</th>
+                    <th>Att</th>
+                    <th>Att/G</th>
+                    <th>Yds</th>
+                    <th>Avg</th>
+                    <th>Yds/G</th>
+                    <th>TD</th>
+                    <th>Lng</th>
+                    <th>1st</th>
+                    <th>1st%</th>
+                    <th>20+</th>
+                    <th>40+</th>
+                    <th>FUM</th>
+                  </tr>
+                </thead>
+                <tbody>
+                {JSON.parse(localStorage.getItem('players_array')).map((player, key) => {
+                  return(
+                  <tr key={key}>
+                    <td>{ player['Player'] }</td>
+                    <td>{ player['Team'] }</td>
+                    <td>{ player['Pos'] }</td>
+                    <td>{ player['Att'] }</td>
+                    <td>{ player['Att/G'] }</td>
+                    <td>{ player['Yds'] }</td>
+                    <td>{ player['Avg'] }</td>
+                    <td>{ player['Yds/G'] }</td>
+                    <td>{ player['TD'] }</td>
+                    <td>{ player['Lng'] }</td>
+                    <td>{ player['1st'] }</td>
+                    <td>{ player['1st%'] }</td>
+                    <td>{ player['20+'] }</td>
+                    <td>{ player['40+'] }</td>
+                    <td>{ player['FUM'] }</td>
+                  </tr>
+                )})}
+                </tbody>
+              </table>
+            </div>
+          </form>
       </div>
       </>
     )
