@@ -32,32 +32,25 @@
   transition: 0.2s;
 }
 
-// ======= PLAYER ALL ==========
-
-.player-all {
-  grid-column: 3 / 10;
-}
-
 .header {
   background-color: #053b71;
 }
 
-.Team {
-  grid-column: 8 / 11;
-  grid-row: 1;
+
+// ======= PLAYER ALL ==========
+
+.form {
+  width: 100%;
 }
 
-// ROW 3
-
-.div-grid {
-  column-gap: 5%;
-  display: grid;
+.player-all {
   grid-column: 2 / 11;
-  grid-row: 2;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
 }
 
+.table {
+  table-layout: fixed;
+width: 100%;
+}
 
 //  =============== MEDIA QUERIES ================ //
 

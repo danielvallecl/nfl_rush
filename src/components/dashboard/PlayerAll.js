@@ -122,7 +122,7 @@ class PlayerAll extends Component {
         <div className="header">
           <p>NFL - General Data</p>
         </div>
-        <form action="#" onSubmit={this.onFormSubmit}>
+        <form className="form" action="#" onSubmit={this.onFormSubmit}>
         <div className="row sel">
           <label className="label">
             Rushing yards
@@ -169,7 +169,7 @@ class PlayerAll extends Component {
           </label>
           </div>
             <div id="list">
-              <table>
+              <table className="table">
                 <thead>
                   <tr>
                     <th>Name</th>
