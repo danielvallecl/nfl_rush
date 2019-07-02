@@ -47,7 +47,7 @@ class Navbar extends Component {
           <div className="collapse navbar-collapse justify-content-end nav-col" id="navbarSupportedContent">
             <Link to="/about" className="nav-link btn btn-link ">About
             </Link>
-            <Link to="/teams" className="nav-link btn btn-link">Players
+            <Link to="/teams" className="nav-link btn btn-link">Teams
             </Link>
             <Link to="/players" className="nav-link btn btn-link">Players
             </Link>

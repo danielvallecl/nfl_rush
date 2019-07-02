@@ -85,7 +85,7 @@ onChange = (e) => {
   const data = [...this.state.data];
     return (
       <>
-      <div className="player-div">
+      <div className="player-div dashboard-div ">
         <div className="header">
           <p>Player Data</p>
         </div>

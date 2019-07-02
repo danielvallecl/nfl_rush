@@ -7,7 +7,7 @@
 
 import React, { Component } from 'react';
 
-class TeamAll extends Component {
+class Teams extends Component {
   constructor(props) {
     super(props);
 
@@ -119,4 +119,4 @@ class TeamAll extends Component {
   }
 }
 
-export default TeamAll;
+export default Teams;
