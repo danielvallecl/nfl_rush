@@ -1,38 +1,19 @@
-
-
-  .header > p {
-    font-family: 'Roboto';
-    font-size: 3.5vh;
-    margin-left: 1vh;
-    color: white;
-  }
-
-.player-body {
-  box-sizing: border-box;
-  display: grid;
-  height: 85%;
-  position: relative;
+.header {
+  color: white;
 }
 
-svg {
-  display: block;
-  height: 1000px;
-  width: 1000px;
+.player-div {
+  grid-column: 2 / 11;
 }
 
-
-.sel {
-  float: center;
-  padding-top: 1vh;
-  font-family: sans-serif;
-  font-size: 10px;
+.table-div {
+  overflow-x: auto;
 }
 
-.label {
-  margin-right: 5vh;
-  margin-left: 5vh;
-}
-
-.check {
-  margin-left: 2vh;
+.table {
+  border-radius: 15px;
+  table-layout: auto;
+  border-collapse: collapse;
+  margin: auto;
+  width: 100%;
 }

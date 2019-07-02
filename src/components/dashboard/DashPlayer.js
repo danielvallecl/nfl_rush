@@ -37,14 +37,16 @@ class DashPlayer extends Component {
       <>
       <div className="dashboard-container">
         <Player />
-        <Team />
-        <section className="div-grid">
-          <Info name="Players" data={ localStorage.getItem('number_of_players') }/>
-          <Info name="TDs" data={ data[1] } />
-          <Info name="Atts" data={ data[2] } />
-          <Info name="Teams" data={ localStorage.getItem('number_of_teams') }/>
-          <Info name="activity" data={ data[4] }/>
-        </section>
+        {
+        // <Team />
+        // <section className="div-grid">
+        //   <Info name="Players" data={ localStorage.getItem('number_of_players') }/>
+        //   <Info name="TDs" data={ data[1] } />
+        //   <Info name="Atts" data={ data[2] } />
+        //   <Info name="Teams" data={ localStorage.getItem('number_of_teams') }/>
+        //   <Info name="activity" data={ data[4] }/>
+        // </section>
+        }
       </div>
       <div style={divOpacity} className="load"></div>
       </>
