@@ -7,6 +7,8 @@
 
 import React, { Component } from 'react';
 
+import './Teams.scss';
+
 class Teams extends Component {
   constructor(props) {
     super(props);
@@ -79,41 +81,45 @@ class Teams extends Component {
 
   render() {
     return (
-      <div className="player dashboard-div">
-        <div className="header">
-        <p>Team's Data</p>
-        </div>
-        <form action="#">
-          <select className="sel" id="team" onChange={this.handleOnSelect}>
-          <option value=''>{'NFL-TEAM'}</option>
-          {JSON.parse(localStorage.getItem('teams')).map((team, key) => {
-            return <option key={key} value={team}>{team}</option>
-          })}
-          </select>
-        </form>
-        <div id="list">
-        {localStorage.getItem('count_teams') !== '0' ?
-        <table>
-          <thead>
-            <tr>
-              <th>Team</th>
-              <th>Number of Players</th>
-              <th>Players</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>{localStorage.getItem('team')}</td>
-              <td>{localStorage.getItem('count_teams')}</td>
-              {JSON.parse(localStorage.getItem('team_members')).map((team, key) => {
-                return <small><li key={key}>{ team.Player }</li></small>
-              })}
-            </tr>
-          </tbody>
-        </table>
-        : null
-      }
-        </div>
+      <div className="dashboard-container">
+        <div className="teams-div dashboard-div">
+          <div className="header">
+          <p>Team Data</p>
+          </div>
+          <form className="text-center" action="#">
+            <select className="sel" id="team" onChange={this.handleOnSelect}>
+            <option value=''>{'Choose Team'}</option>
+            {JSON.parse(localStorage.getItem('teams')).map((team, key) => {
+              return <option key={key} value={team}>{team}</option>
+            })}
+            </select>
+          </form>
+          <div id="list">
+          {localStorage.getItem('count_teams') !== '0' ?
+          <div className="table-div">
+            <table className="table">
+              <thead>
+                <tr>
+                  <th>Team</th>
+                  <th>Number of Players</th>
+                  <th>Players</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>{localStorage.getItem('team')}</td>
+                  <td>{localStorage.getItem('count_teams')}</td>
+                  {JSON.parse(localStorage.getItem('team_members')).map((team, key) => {
+                    return <small><li key={key}>{ team.Player }</li></small>
+                  })}
+                </tr>
+              </tbody>
+            </table>
+            </div>
+          : null
+        }
+          </div>
+      </div>
       </div>
     )
   }
