@@ -5,13 +5,24 @@
  * @version: 1.0
  */
 
-import React, { Component } from 'react';
+ import React, { Component } from "react";
+
+// ======== COMPONENTS ======== //
+
+import DashPlayer from "./dashboard/DashPlayer"
+
+
+import "./Home.scss";
 
 class Players extends Component {
+
   render() {
-    return(
-      <h1>I am Players</h1>
-    )
+
+    return (
+      <React.Fragment>
+          <DashPlayer />
+      </React.Fragment>
+    );
   }
 }
 

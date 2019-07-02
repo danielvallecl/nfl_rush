@@ -11,6 +11,7 @@ import React, { Component } from "react";
 
 import Player from './Player';
 import Team from './Team';
+import Info from './Info';
 
 //  ========= CSS ======== //
 
