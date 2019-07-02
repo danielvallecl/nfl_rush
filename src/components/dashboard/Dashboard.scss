@@ -53,6 +53,33 @@
   margin: auto;
 }
 
+// ======== TABLES =========
+
+th {
+  background-color: #053b71;
+  color: white;
+  border: 1px solid white;
+}
+
+td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #053b71;
+}
+
+tbody {
+  border-collapse: collapse;
+  font-family: arial, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+tr:nth-child(even) {
+  background-color: #f5f8f8;
+}
+
+
+
 // ======= PLAYER ALL ==========
 
 .form {
