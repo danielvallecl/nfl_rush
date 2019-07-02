@@ -1,9 +1,15 @@
+/***
+ * @App name: NFL Rush
+ * @Component Name: DashHome.js
+ * @author: Daniel Valle
+ * @version: 1.0
+ */
+
 import React, { Component } from "react";
 
 //  ========= COMPONENTS ======== //
 
-import ChartAll from './ChartAll';
-import PiechartAll from './PiechartAll';
+import PlayerAll from './PlayerAll';
 
 //  ========= CSS ======== //
 
@@ -27,8 +33,7 @@ class DashHome extends Component {
     return (
       <>
       <div className="dashboard-container">
-        <ChartAll />
-        <PiechartAll />
+        <PlayerAll />
       </div>
       <div style={divOpacity} className="load"></div>
       </>

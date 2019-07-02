@@ -1,8 +1,16 @@
+/***
+ * @App name: NFL Rush
+ * @Component Name: DashHome.js
+ * @author: Daniel Valle
+ * @version: 1.0
+ */
+
 import React, { Component } from "react";
 
 //  ========= COMPONENTS ======== //
 
 import Player from './Player';
+import Team from './Team';
 
 //  ========= CSS ======== //
 
@@ -28,7 +36,7 @@ class DashPlayer extends Component {
       <>
       <div className="dashboard-container">
         <Player />
-        <Piechart />
+        <Team />
         <section className="div-grid">
           <Info name="Players" data={ localStorage.getItem('number_of_players') }/>
           <Info name="TDs" data={ data[1] } />
@@ -36,7 +44,6 @@ class DashPlayer extends Component {
           <Info name="Teams" data={ localStorage.getItem('number_of_teams') }/>
           <Info name="activity" data={ data[4] }/>
         </section>
-
       </div>
       <div style={divOpacity} className="load"></div>
       </>

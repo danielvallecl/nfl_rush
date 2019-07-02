@@ -1,3 +1,11 @@
+/***
+ * @App name: NFL Rush
+ * @Component Name: DashHome.js
+ * @author: Daniel Valle
+ * @version: 1.0
+ */
+
+
 import React, { Component } from 'react'
 
 class Player extends Component {
