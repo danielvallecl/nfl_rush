@@ -1,0 +1,84 @@
+// CSS FOR DASHBOARD ELEMENT OF PAGE
+
+// IMPORTS
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+  font-family: 'Roboto';
+}
+
+// CONTAINERS
+
+.dashboard-container {
+  column-gap: 2%;
+  display: grid;
+  grid-row-gap: 4%;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 45vh 2fr 50vh;
+  height: 100vh;
+  margin-bottom: 10%;
+  margin-top: 2%;
+  width: 100vw;
+}
+
+.dashboard-div {
+  border-radius: 15px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.dashboard-div:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: 0.2s;
+}
+
+// ROW 1
+
+.chart {
+  display: block;
+  grid-column: 1 / 8;
+  grid-row: 1;
+}
+
+.piechart {
+  grid-column: 8 / 11;
+  grid-row: 1;
+}
+
+// ROW 3
+
+.div-grid {
+  column-gap: 5%;
+  display: grid;
+  grid-column: 2 / 11;
+  grid-row: 2;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+
+//  =============== MEDIA QUERIES ================ //
+
+@media only screen and (max-width: 992px) {
+  .dashboard-container {
+    grid-template-rows: 50vh 50vh 70vh;
+  }
+
+  .div-grid {
+    grid-row: 4;
+    grid-row-gap: 4%;
+    grid-template-rows: repeat(4fr);
+  }
+
+  .chart {
+    grid-column: 2 / 11;
+    grid-row: 1;
+  }
+
+  .piechart {
+    grid-column: 2 / 11;
+    grid-row: 2;
+  }
+
+}

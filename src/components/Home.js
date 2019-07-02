@@ -22,7 +22,7 @@
 
      return (
        <React.Fragment>
-           <DashboardHome />
+           <DashHome />
        </React.Fragment>
      );
    }
