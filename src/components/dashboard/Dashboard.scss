@@ -14,8 +14,7 @@
   column-gap: 2%;
   display: grid;
   grid-row-gap: 4%;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 45vh 2fr 50vh;
+  grid-template-columns: repeat(11, 1fr);
   height: 100vh;
   margin-bottom: 10%;
   margin-top: 2%;
@@ -33,12 +32,8 @@
   transition: 0.2s;
 }
 
-// ROW 1
-
-.chart {
-  display: block;
-  grid-column: 1 / 8;
-  grid-row: 1;
+.player-all {
+  grid-column: 3 / 10;
 }
 
 .Team {
@@ -71,7 +66,7 @@
     grid-template-rows: repeat(4fr);
   }
 
-  .chart {
+  .player {
     grid-column: 2 / 11;
     grid-row: 1;
   }

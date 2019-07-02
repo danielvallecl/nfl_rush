@@ -9,8 +9,7 @@
 
 // ======== COMPONENTS ======== //
 
-import DashPlayer from "./dashboard/DashPlayer"
-
+import DashPlayer from "./dashboard/DashPlayer";
 
 import "./Home.scss";
 
@@ -20,7 +19,7 @@ class Players extends Component {
 
     return (
       <React.Fragment>
-          <DashPlayer />
+        <DashPlayer />
       </React.Fragment>
     );
   }

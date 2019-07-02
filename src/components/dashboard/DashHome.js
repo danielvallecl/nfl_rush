@@ -25,17 +25,12 @@ class DashHome extends Component {
   }
 
   render() {
-    //let data = [10, 20, 30, 40, 50];
-    const divOpacity = {
-			opacity: this.state.opacity,
-		};
-
     return (
       <>
       <div className="dashboard-container">
         <PlayerAll />
       </div>
-      <div style={divOpacity} className="load"></div>
+      <div className="load"></div>
       </>
     )
   }

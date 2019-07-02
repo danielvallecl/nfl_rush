@@ -80,7 +80,7 @@ class TeamAll extends Component {
 
   render() {
     return (
-      <div className="team dashboard-div">
+      <div className="player dashboard-div">
         <div className="header">
         <p>Team's Data</p>
         </div>

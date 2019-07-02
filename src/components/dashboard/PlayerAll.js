@@ -118,7 +118,7 @@ class PlayerAll extends Component {
 
     return (
       <>
-      <div className="player dashboard-div">
+      <div className="player-all dashboard-div">
         <div className="header">
           <p>NFL - General Data</p>
           <form action="#" onSubmit={this.onFormSubmit}>

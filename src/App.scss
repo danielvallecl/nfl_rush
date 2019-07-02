@@ -1,8 +1,17 @@
 
-// FONT IMPORT
+body {
+  background-color: transparent;
+}
 
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+.home {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
 
-* {
-  font-family: 'Roboto', sans-serif;
+.root {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
