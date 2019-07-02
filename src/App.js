@@ -14,14 +14,14 @@ import Search from './components/Search';
 
 // ======= CSS =======
 
-import './App.css';
+import './App.scss';
 
 // ======= COMPONENT =======
 
 function App() {
   return (
     <Router >
-      <div className="App col-10 root">
+      <div className="">
       <Navbar />
         <Switch>
           <Route exact path="/" component= {Home} />
@@ -30,7 +30,7 @@ function App() {
           <Route path="/players" component={Players} />
           <Route path="/search" component={Search} />
           <Route path='*' component={Component404} />
-          </Switch>
+        </Switch>
       </div>
     </Router>
   );
