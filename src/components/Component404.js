@@ -5,11 +5,21 @@
  * @version: 1.0
  */
 
+ import React from "react";
 
-import React from 'react';
+ const Component404 = () => {
+   return (
+     <>
+       <div>
+         <br />
+         <hr />
+         <h1 className="text-center">
+           The requested page does not exist <br/>
+         '404 - Not Found'
+         </h1>
+       </div>
+     </>
+   );
+ };
 
-const Component404 = () => {
-  return <h1>404</h1>;
-}
-
-export default Component404;
+ export default Component404;
