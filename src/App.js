@@ -1,23 +1,38 @@
+// ======= DEPENDENCIES =======
+
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 // ======= COMPONENTS =======
 
-import './components/404';
-import './components/About';
-import './components/Home';
-import './components/Navbar';
-import './components/Players';
-import './components/Search';
+import Component404 from './components/Component404';
+import About from './components/About';
+import Home from './components/Home';
+import Navbar from './components/Navbar';
+import Players from './components/Players';
+import Search from './components/Search';
+
+// ======= CSS =======
 
 import './App.css';
 
+// ======= COMPONENT =======
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-
-      </header>
-    </div>
+    <Router >
+      <div className="App col-10 root">
+      <Navbar />
+        <Switch>
+          <Route exact path="/" component= {Home} />
+          <Route path="/home" component= {Home} />
+          <Route path="/about" component={About} />
+          <Route path="/players" component={Players} />
+          <Route path="/search" component={Search} />
+          <Route path='*' component={Component404} />
+          </Switch>
+      </div>
+    </Router>
   );
 }
 
