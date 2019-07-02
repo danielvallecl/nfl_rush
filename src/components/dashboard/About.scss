@@ -1,0 +1,13 @@
+
+.about {
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.about-heading {
+  grid-column: 2 / 10;
+}
+
+.about-text {
+  grid-column: 2 / 10;
+
+}

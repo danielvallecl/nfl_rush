@@ -1,8 +1,17 @@
 
+.navbar {
+  margin-bottom: 7vh;
+}
 
-.logo {
-  height: 12vh;
-  margin-left: 2vw;
+.navbar-brand ,.logo {
+  height: 10vh;
+  margin-left: 5vw;
+}
+
+.navbar-collapse {
+  position: relative;
+  box-sizing: border;
+  right: 10vw;
 }
 
 .button {

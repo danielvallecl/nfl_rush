@@ -38,7 +38,7 @@ class Navbar extends Component {
     return(
       <>
         <nav className="navbar navbar-expand-lg navbar-light p-0 navbar-right">
-          <Link to="/home" className="nav-link">
+          <Link to="/home" className="navbar-brand">
             <img className="img-fluid logo" id='1' src= {logo} alt="NFL link Logo"/>
           </Link>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

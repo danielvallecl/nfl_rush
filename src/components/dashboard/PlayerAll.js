@@ -169,49 +169,51 @@ class PlayerAll extends Component {
           </label>
           </div>
             <div id="list">
-              <table className="table">
-                <thead>
-                  <tr>
-                    <th>Name</th>
-                    <th>Team</th>
-                    <th>Pos</th>
-                    <th>Att</th>
-                    <th>Att/G</th>
-                    <th>Yds</th>
-                    <th>Avg</th>
-                    <th>Yds/G</th>
-                    <th>TD</th>
-                    <th>Lng</th>
-                    <th>1st</th>
-                    <th>1st%</th>
-                    <th>20+</th>
-                    <th>40+</th>
-                    <th>FUM</th>
-                  </tr>
-                </thead>
-                <tbody>
-                {JSON.parse(localStorage.getItem('players_array')).map((player, key) => {
-                  return(
-                  <tr key={key}>
-                    <td>{ player['Player'] }</td>
-                    <td>{ player['Team'] }</td>
-                    <td>{ player['Pos'] }</td>
-                    <td>{ player['Att'] }</td>
-                    <td>{ player['Att/G'] }</td>
-                    <td>{ player['Yds'] }</td>
-                    <td>{ player['Avg'] }</td>
-                    <td>{ player['Yds/G'] }</td>
-                    <td>{ player['TD'] }</td>
-                    <td>{ player['Lng'] }</td>
-                    <td>{ player['1st'] }</td>
-                    <td>{ player['1st%'] }</td>
-                    <td>{ player['20+'] }</td>
-                    <td>{ player['40+'] }</td>
-                    <td>{ player['FUM'] }</td>
-                  </tr>
-                )})}
-                </tbody>
-              </table>
+              <div className="table-div">
+                <table className="table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Team</th>
+                      <th>Pos</th>
+                      <th>Att</th>
+                      <th>Att/G</th>
+                      <th>Yds</th>
+                      <th>Avg</th>
+                      <th>Yds/G</th>
+                      <th>TD</th>
+                      <th>Lng</th>
+                      <th>1st</th>
+                      <th>1st%</th>
+                      <th>20+</th>
+                      <th>40+</th>
+                      <th>FUM</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                  {JSON.parse(localStorage.getItem('players_array')).map((player, key) => {
+                    return(
+                    <tr key={key}>
+                      <td>{ player['Player'] }</td>
+                      <td>{ player['Team'] }</td>
+                      <td>{ player['Pos'] }</td>
+                      <td>{ player['Att'] }</td>
+                      <td>{ player['Att/G'] }</td>
+                      <td>{ player['Yds'] }</td>
+                      <td>{ player['Avg'] }</td>
+                      <td>{ player['Yds/G'] }</td>
+                      <td>{ player['TD'] }</td>
+                      <td>{ player['Lng'] }</td>
+                      <td>{ player['1st'] }</td>
+                      <td>{ player['1st%'] }</td>
+                      <td>{ player['20+'] }</td>
+                      <td>{ player['40+'] }</td>
+                      <td>{ player['FUM'] }</td>
+                    </tr>
+                  )})}
+                  </tbody>
+                </table>
+              </div>
             </div>
           </form>
       </div>

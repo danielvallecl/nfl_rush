@@ -13,10 +13,8 @@ const About = (props) => {
 
   return(
     <>
-      <div>
-      <hr></hr>
-        <h1 className="center">This is the NFL about page.</h1>
-        <p className="home-text ml-2 mr-2">
+      <div className="dashboard-container">
+        <p className="about-text ml-2 mr-2">
         The National Football League (NFL) is a professional American football
         league consisting of 32 teams, divided equally between the National
         Football Conference (NFC) and the American Football Conference (AFC).

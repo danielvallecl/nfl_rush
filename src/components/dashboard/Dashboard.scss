@@ -47,6 +47,10 @@
   grid-column: 2 / 11;
 }
 
+.table-div {
+  overflow-x: auto;
+}
+
 .table {
   border-radius: 15px;
   table-layout: auto;
@@ -62,9 +66,6 @@
 //  =============== MEDIA QUERIES ================ //
 
 @media only screen and (max-width: 992px) {
-  .dashboard-container {
-    grid-template-rows: 50vh 50vh 70vh;
-  }
 
   .div-grid {
     grid-row: 4;
