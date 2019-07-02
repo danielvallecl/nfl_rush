@@ -100,7 +100,7 @@ onChange = (e) => {
           <div id="list">
           {localStorage.getItem('count') !== '0' ?
             <div className="table-div">
-            <table className="table-div">
+            <table className="table">
               <thead>
                 <tr>
                   <th>Name</th>
