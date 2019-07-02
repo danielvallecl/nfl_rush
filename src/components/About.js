@@ -5,8 +5,14 @@
  * @version: 1.0
  */
 
-
 import React from 'react';
+
+// ======= CSS ========
+
+import './About.scss';
+
+// ======= IMAGES ========
+
 import home from '../images/nfl.png';
 
 const About = (props) => {
@@ -14,7 +20,7 @@ const About = (props) => {
   return(
     <>
       <div className="dashboard-container">
-        <p className="about-text ml-2 mr-2">
+        <p className="about-text">
         The National Football League (NFL) is a professional American football
         league consisting of 32 teams, divided equally between the National
         Football Conference (NFC) and the American Football Conference (AFC).
@@ -27,8 +33,9 @@ const About = (props) => {
         to the playoffs, a single-elimination tournament culminating in the
         Super Bowl, which is usually held in the first Sunday in February,
         and is played between the champions of the NFC and AFC.
+        <br>
+        </br>
         </p>
-        <img className="home" src= {home} alt="NFL About page"/>
       </div>
     </>
   )
