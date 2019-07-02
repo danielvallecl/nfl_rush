@@ -1,3 +1,11 @@
+/***
+ * @App name: NFL Rush
+ * @Component Name: Navbar.js
+ * @author: Daniel Valle
+ * @version: 1.0
+ */
+
+
 import React, { Component } from 'react';
 import { Link , withRouter} from 'react-router-dom';
 
@@ -26,7 +34,6 @@ class Navbar extends Component {
   }
 
   render() {
-
     const { search } = this.state
 
     return(
@@ -39,32 +46,28 @@ class Navbar extends Component {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse justify-content-end nav-col" id="navbarSupportedContent">
-
             <Link to="/about" className="nav-link btn btn-link ">About
             </Link>
             <Link to="/players" className="nav-link btn btn-link">Players
             </Link>
-              <React.Fragment>
-                <form className="form-inline" onSubmit={this.handleOnSubmit}>
-                <button
-                  className="btn btn-link my-2 my-sm-0"
-                  style={{backgroundColor: 'white', WebkitAppearance: 'none'}}
-                  id="submit"
-                  type="submit">
-                  <i className="fas fa-search"></i>
-                </button>
-                  <input
-                    className="form-control mr-sm-2"
-                    name="search"
-                    type="search"
-                    value = {search}
-                    onChange={this.handleOnChange}
-                    placeholder="Search"
-                    aria-label="Search"
-                  />
-                </form>
-              </React.Fragment>
-          </div>
+              <form className="form-inline" onSubmit={this.handleOnSubmit}>
+              <button
+                className="btn btn-link my-2 my-sm-0"
+                id="submit"
+                type="submit">
+                <i className="fas fa-search"></i>
+              </button>
+                <input
+                  className="form-control mr-sm-2"
+                  name="search"
+                  type="search"
+                  value = {search}
+                  onChange={this.handleOnChange}
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+              </form>
+            </div>
         </nav>
       </>
     )

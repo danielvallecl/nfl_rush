@@ -1,3 +1,11 @@
+/***
+ * @App name: NFL Rush
+ * @Component Name: About.js
+ * @author: Daniel Valle
+ * @version: 1.0
+ */
+
+
 import React from 'react';
 import home from '../images/nfl.png';
 
