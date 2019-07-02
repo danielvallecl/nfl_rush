@@ -78,7 +78,7 @@ class Team extends Component {
 
   render () {
     return (
-      <div className="dashboard-div">
+      <div className="team dashboard-div">
         <div className="header">
         <p>Team's Data</p>
         </div>
