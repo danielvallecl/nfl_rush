@@ -8,10 +8,18 @@
   margin-left: 5vw;
 }
 
+.navbar-toggler {
+  margin-right: 7vw;
+}
+
+.navbar-toggler-icon {
+  color: #d8242e;
+}
+
 .navbar-collapse {
   position: relative;
   box-sizing: border;
-  right: 10vw;
+  right: 7.5vw;
 }
 
 .button {
@@ -21,4 +29,12 @@
 .nav-link, .fa-search {
   color: #d8242e;
   font-weight: bold;
+&:hover {
+    color: #053b71
+  }
+}
+
+.search-button {
+  position: relative;
+  right: 3.5vw;
 }

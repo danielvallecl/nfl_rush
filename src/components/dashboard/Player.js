@@ -88,7 +88,8 @@ onChange = (e) => {
       <div className="player-div">
         <div className="header">
           <p>Player Data</p>
-          <form action="#">
+        </div>
+          <form className="text-center" action="#">
             <select className="sel" id="player" onChange={this.handleOnSelect}>
             <option value=''>{'Choose Player'}</option>
             {JSON.parse(localStorage.getItem('players_array')).map((player, key) => {
@@ -99,7 +100,7 @@ onChange = (e) => {
           <div id="list">
           {localStorage.getItem('count') !== '0' ?
             <div className="table-div">
-            <table>
+            <table className="table-div">
               <thead>
                 <tr>
                   <th>Name</th>
@@ -145,7 +146,6 @@ onChange = (e) => {
           }
           </div>
         </div>
-      </div>
       </>
     )
   }

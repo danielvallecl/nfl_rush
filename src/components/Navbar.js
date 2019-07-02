@@ -50,12 +50,6 @@ class Navbar extends Component {
             <Link to="/players" className="nav-link btn btn-link">Players
             </Link>
               <form className="form-inline" onSubmit={this.handleOnSubmit}>
-              <button
-                className="btn btn-link my-2 my-sm-0"
-                id="submit"
-                type="submit">
-                <i className="fas fa-search"></i>
-              </button>
                 <input
                   className="form-control mr-sm-2"
                   name="search"
@@ -65,6 +59,12 @@ class Navbar extends Component {
                   placeholder="Search"
                   aria-label="Search"
                 />
+                <button
+                  className="btn btn-link search-button"
+                  id="submit"
+                  type="submit">
+                  <i className="fas fa-search"></i>
+                </button>
               </form>
             </div>
         </nav>
