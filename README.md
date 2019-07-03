@@ -38,4 +38,4 @@ A live version of the application is also hosted on my personal website:
 
 ## Instructions
 
-![alt text](https://raw.githubusercontent.com/danielvallecl/nfl_rush/master/src/images/interface.jpg)
+![Screenshot](interface.jpg)
