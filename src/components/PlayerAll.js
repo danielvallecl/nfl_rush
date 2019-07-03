@@ -284,7 +284,7 @@ class PlayerAll extends Component {
             </div>
             <div id="list">
               <div className="table-div">
-                <table>
+                <table className="table">
                   <thead>
                     <tr>
                       <th style={{paddingRight: '15vh'}}>Name</th>
