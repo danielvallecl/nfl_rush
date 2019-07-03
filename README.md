@@ -35,3 +35,7 @@ The app will open on port 3000 on your browser.
 A live version of the application is also hosted on my personal website:
 
 * [NFL RUSH](http://www.danielvalle.ca/nfl_rush.html)
+
+## Instructions
+
+![alt text](https://raw.githubusercontent.com/danielvallecl/nfl_rush/master/src/images/interface.jpg)
