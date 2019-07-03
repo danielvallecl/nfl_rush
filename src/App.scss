@@ -1,17 +1,127 @@
+// CSS FOR DASHBOARD ELEMENT OF PAGE
 
-body {
-  background-color: transparent;
+// IMPORTS
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+  font-family: 'Roboto';
 }
 
-.home {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 30%;
+// CONTAINERS
+
+.dashboard-container {
+  column-gap: 2%;
+  display: grid;
+  grid-row-gap: 4%;
+  grid-template-columns: repeat(11, 1fr);
+  height: 100vh;
+  margin-bottom: 10%;
+  margin-top: 2%;
+  width: 100vw;
 }
 
-.root {
-  display: block;
+.dashboard-div {
+  border-radius: 15px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.dashboard-div:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: 0.2s;
+}
+
+.header {
+  text-align: center;
+  background-color: #053b71;
+  color: white;
+  font-size: 5vh;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.title {
+  text-align: center;
+}
+
+.selection {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2.5vh;
+  color: #d8242e;
+  font-weight: bold;
+  margin: auto;
+}
+
+// ======== TABLES =========
+
+th {
+  background-color: #053b71;
+  color: white;
+  border: 1px solid white;
+}
+
+td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #053b71;
+}
+
+tbody {
+  border-collapse: collapse;
+  font-family: arial, sans-serif;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
+}
+tr:nth-child(even) {
+  background-color: #f5f8f8;
+}
+
+// ======= PLAYER ALL ==========
+
+.form {
+  width: 100%;
+}
+
+.player-all {
+  grid-column: 2 / 11;
+}
+
+.table-div {
+  overflow-x: auto;
+}
+
+.table {
+  border-radius: 15px;
+  table-layout: auto;
+  border-collapse: collapse;
+  margin: auto;
+  width: 100%;
+}
+
+.table th, .table td {
+  text-align: center;
+}
+
+//  =============== MEDIA QUERIES ================ //
+
+@media only screen and (max-width: 992px) {
+
+  .div-grid {
+    grid-row: 4;
+    grid-row-gap: 4%;
+    grid-template-rows: repeat(4fr);
+  }
+
+  .player {
+    grid-column: 2 / 11;
+    grid-row: 1;
+  }
+
+  .Team {
+    grid-column: 2 / 11;
+    grid-row: 2;
+  }
 }
