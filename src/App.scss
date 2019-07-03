@@ -13,6 +13,11 @@
 $blue: #053b71;
 $red: #d8242e;
 
+// =========== OVERRIDES =========== //
+p, h6 {
+margin: 0;
+}
+
 // ============ NAVBAR ============ //
 
 .navbar {
@@ -160,7 +165,9 @@ tr:nth-child(even) {
   background-color: #f5f8f8;
 }
 
-.selection {
+// =========== SELECITON MENU ============
+
+.menu {
   background-color: yellow;
   text-align: center;
   display: flex;

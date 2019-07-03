@@ -208,10 +208,11 @@ class PlayerAll extends Component {
       <div className="grid-container players-container">
         <div className="players-div div-shadow">
           <div className="header">
-            <p>NFL - General Data</p>
+            <h1>NFL Data</h1>
+            <h6>Page: {parseInt(localStorage.getItem('page')) + 1}</h6>
           </div>
           <form action="#">
-          <div className="selection">
+          <div className="menu">
           <label className="label">
             Player
             <input
@@ -257,7 +258,7 @@ class PlayerAll extends Component {
               />
             </label>
             <label className="label">
-              Ascending
+              {this.state.ascending? 'Ascending' : 'Descending'}
               <input
                 className="check"
                 type="checkbox"
@@ -277,9 +278,6 @@ class PlayerAll extends Component {
                 defaultChecked={this.state.save}
                 value={this.state.save}
               />
-            </label>
-            <label className="label" style={{color: 'blue'}}>
-              Page: {parseInt(localStorage.getItem('page')) + 1}
             </label>
             </div>
             <div id="list">
