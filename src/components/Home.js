@@ -11,9 +11,6 @@
 
  import PlayerAll from './PlayerAll';
 
-// ======== CSS ======== //
-
- import "./Home.scss";
 
  class Home extends Component {
 

@@ -8,9 +8,51 @@
   font-family: 'Roboto';
 }
 
-// ============ CONTAINERS ============
+// ============ NAVBAR ============ //
 
-.dashboard-container {
+.navbar {
+  margin-bottom: 7vh;
+}
+
+.navbar-brand, .logo {
+  height: 10vh;
+  margin-left: 5vw;
+}
+
+.navbar-toggler {
+  margin-right: 7vw;
+}
+
+.navbar-toggler-icon {
+  color: #d8242e;
+}
+
+.navbar-collapse {
+  display: grid;
+  right: 7.5vw;
+  margin-right: 7vw;
+}
+
+.button {
+  background-color: white;
+}
+
+.nav-link, .fa-search {
+  color: #d8242e;
+  font-weight: bold;
+&:hover {
+    color: #053b71
+  }
+}
+
+.search-button {
+  position: relative;
+  right: 3.5vw;
+}
+
+// ============ CONTAINERS ============ //
+
+.grid-container {
   column-gap: 2%;
   display: grid;
   grid-row-gap: 4%;
@@ -21,13 +63,21 @@
   width: 100vw;
 }
 
-.dashboard-div {
+.players-container {
+  grid-template-rows: 1fr 4fr 1fr;
+}
+
+.players-header {
+  grid-row: 1
+}
+
+.div-shadow {
   border-radius: 15px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-.dashboard-div:hover {
+.div-shadow:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   transition: 0.2s;
 }
@@ -39,6 +89,14 @@
   font-size: 5vh;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+}
+
+.information-div {
+  grid-column: 3 / 10;
+}
+
+.players-div {
+  grid-column: 2 / 11;
 }
 
 .title {
@@ -55,6 +113,22 @@
 }
 
 // ======== TABLES =========
+
+.table-div {
+  overflow-x: auto;
+}
+
+.table {
+  border-radius: 15px;
+  table-layout: auto;
+  border-collapse: collapse;
+  margin: auto;
+  width: 100%;
+}
+
+.table th, .table td {
+  text-align: center;
+}
 
 th {
   background-color: #053b71;
@@ -75,34 +149,9 @@ tbody {
   margin-right: auto;
   width: 100%;
 }
+
 tr:nth-child(even) {
   background-color: #f5f8f8;
-}
-
-// ======= PLAYERS ==========
-
-.form {
-  width: 100%;
-}
-
-.player-all {
-  grid-column: 2 / 11;
-}
-
-.table-div {
-  overflow-x: auto;
-}
-
-.table {
-  border-radius: 15px;
-  table-layout: auto;
-  border-collapse: collapse;
-  margin: auto;
-  width: 100%;
-}
-
-.table th, .table td {
-  text-align: center;
 }
 
 //  =============== ABOUT ================ //

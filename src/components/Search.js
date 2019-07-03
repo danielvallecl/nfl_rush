@@ -6,9 +6,6 @@
  */
 
 import React, { Component } from 'react';
-import './Search.scss';
-import home from '../images/nfl.png';
-
 
 class Search extends Component {
   constructor(props) {

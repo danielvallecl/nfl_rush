@@ -7,8 +7,6 @@
 
 import React, { Component } from 'react';
 
-import './Teams.scss';
-
 class Teams extends Component {
   constructor(props) {
     super(props);
@@ -81,8 +79,8 @@ class Teams extends Component {
 
   render() {
     return (
-      <div className="dashboard-container">
-        <div className="teams-div dashboard-div">
+      <div className="grid-container">
+        <div className="information-div div-shadow">
           <div className="header">
           <p>Team Data</p>
           </div>
