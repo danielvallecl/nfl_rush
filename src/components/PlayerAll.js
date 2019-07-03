@@ -268,17 +268,20 @@ class PlayerAll extends Component {
                 value={this.state.ascending}
               />
             </label>
-            <label className="label">
-              Save
-              <input
-                className="check"
-                type="checkbox"
-                name="save"
-                onChange={this.onCheckChange}
-                defaultChecked={this.state.save}
-                value={this.state.save}
-              />
-            </label>
+            <div className="outerDivFull" >
+              Save CSV
+              <div className="switchToggle">
+                  <input
+                  type="checkbox"
+                  id="switch"
+                  name="save"
+                  onChange={this.onCheckChange}
+                  defaultChecked={this.state.save}
+                  value={this.state.save}
+                  />
+                  <label for="switch">Save</label>
+              </div>
+            </div>
             </div>
             <div id="list">
               <div className="table-div">
