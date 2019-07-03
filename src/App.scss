@@ -8,7 +8,7 @@
   font-family: 'Roboto';
 }
 
-// CONTAINERS
+// ============ CONTAINERS ============
 
 .dashboard-container {
   column-gap: 2%;
@@ -79,7 +79,7 @@ tr:nth-child(even) {
   background-color: #f5f8f8;
 }
 
-// ======= PLAYER ALL ==========
+// ======= PLAYERS ==========
 
 .form {
   width: 100%;
@@ -103,6 +103,20 @@ tr:nth-child(even) {
 
 .table th, .table td {
   text-align: center;
+}
+
+//  =============== ABOUT ================ //
+
+.about {
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.about-heading {
+  grid-column: 2 / 10;
+}
+
+.about-text {
+  grid-column: 2 / 10;
 }
 
 //  =============== MEDIA QUERIES ================ //

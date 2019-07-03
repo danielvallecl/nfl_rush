@@ -7,13 +7,7 @@
 
 import React from 'react';
 
-// ======= CSS ========
-
-import './About.scss';
-
 // ======= IMAGES ========
-
-import home from '../images/nfl.png';
 
 const About = (props) => {
 
