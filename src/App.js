@@ -1,3 +1,10 @@
+/***
+ * @App name: NFL Rush
+ * @Component Name: App.js
+ * @author: Daniel Valle
+ * @version: 1.0
+ */
+
 // ======= DEPENDENCIES =======
 
 import React from 'react';
