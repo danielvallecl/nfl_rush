@@ -102,7 +102,7 @@
        <div className= "grid-container">
          <div className="search-div">
          <form action="#">
-           <select className="search-results" size={localStorage.getItem('numb_of_items')} className="sel" id="player" onChange={this.handleOnSelect}>
+           <select className="search-results" size={localStorage.getItem('numb_of_items')} id="player" onChange={this.handleOnSelect}>
            {JSON.parse(localStorage.getItem('players_array')).map((player, key) => {
              return <option key={key} value={player}>{player}</option>
            })}

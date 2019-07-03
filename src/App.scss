@@ -188,10 +188,9 @@ tr:nth-child(even) {
 .search-div {
   grid-column: 3 / 10;
   justify-content: center;
-  background-color: darkblue;
 }
 
-select {
+.search-results {
   width: 100%;
   text-align: center;
   background-color: yellow;
