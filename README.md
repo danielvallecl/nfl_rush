@@ -12,13 +12,13 @@ Node.js, React
 
 ### Installing
 
--To run the app follow these procedures:
+To run the app follow these procedures:
 
 ```
 git clone git@github.com:danielvallecl/nfl_rush.git
 ```
 
--Change directory into the nfl_rush folder then run:
+Change directory into the nfl_rush folder then run:
 
 ```
 npm install
