@@ -10,7 +10,7 @@ import About from './components/About';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Teams from './components/Teams';
-import Players from './components/Players';
+import Player from './components/Player';
 import Search from './components/Search';
 
 // ======= CSS =======
@@ -29,7 +29,7 @@ function App() {
           <Route path="/home" component= {Home} />
           <Route path="/about" component={About} />
           <Route path="/teams" component={Teams} />
-          <Route path="/players" component={Players} />
+          <Route path="/player" component={Player} />
           <Route path="/search" component={Search} />
           <Route path='*' component={Component404} />
         </Switch>
