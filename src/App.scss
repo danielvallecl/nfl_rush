@@ -14,6 +14,8 @@ $blue: #053b71;
 $red: #d8242e;
 
 // =========== OVERRIDES =========== //
+
+
 p, h6 {
 margin: 0;
 }
@@ -67,7 +69,6 @@ margin: 0;
   display: grid;
   grid-row-gap: 4%;
   grid-template-columns: repeat(11, 1fr);
-  height: 100vh;
   margin-bottom: 10%;
   margin-top: 2%;
   width: 100vw;
@@ -99,10 +100,7 @@ margin: 0;
   font-size: 5vh;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-}
-
-.information-div {
-  grid-column: 3 / 10;
+  padding: 1vh;
 }
 
 .players-div {
@@ -123,6 +121,12 @@ margin: 0;
   margin: auto;
 }
 
+// ========= PLAYER AND TEAMS =========== //
+
+.information-div {
+  grid-column: 3 / 10;
+}
+
 // ======== TABLES =========
 
 .table-div {
@@ -135,6 +139,8 @@ margin: 0;
   border-collapse: collapse;
   margin: auto;
   width: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .table th, .table td {
@@ -148,9 +154,9 @@ th {
 }
 
 td {
-  padding: 8px;
   text-align: left;
-  border: 1px solid $blue;
+  border: 1px solid;
+  border-bottom-left-radius: 15px;
 }
 
 tbody {
@@ -165,16 +171,38 @@ tr:nth-child(even) {
   background-color: #f5f8f8;
 }
 
-// =========== SELECITON MENU ============
+// =========== SELECTION MENU ============
 
 .menu {
-  background-color: yellow;
   text-align: center;
   display: flex;
   justify-content: space-around;
   font-size: 2.5vh;
   color: $red;
   font-weight: bold;
+  padding: 1vh;
+}
+
+// ================ SEARCH ================= //
+
+.search-div {
+  grid-column: 3 / 10;
+  justify-content: center;
+  background-color: darkblue;
+}
+
+select {
+  width: 100%;
+  text-align: center;
+  background-color: yellow;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#list {
+  justify-content: center;
+  grid-column: 3 / 10;
 }
 
 //  =============== PAGINATION ================ //

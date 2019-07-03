@@ -44,14 +44,11 @@
    return players_array.sort();
  }
 
-
-
    handleOnSubmit = (e) => {
      e.preventDefault();
      //console.log(this.props);
      this.props.history.goBack();
    }
-
 
    onChange = (e) => {
      this.setState({[e.target.name]: e.target.value });
@@ -79,7 +76,6 @@
       }
     }
 
-
    componentWillMount() {
      const players_array = this.prepare_players();
      const search = sessionStorage.getItem('search');
@@ -96,7 +92,6 @@
    }
 
    render() {
-     //console.log("Search", sessionStorage.getItem('search'));
      const divOpacity = {
  			opacity: this.state.opacity,
  		};
@@ -104,10 +99,10 @@
 
      return(
        <>
-       <div className= "container ">
-         <div style={divOpacity} className="load"></div>
+       <div className= "grid-container">
+         <div className="search-div">
          <form action="#">
-           <select size={localStorage.getItem('numb_of_items')} className="sel" id="player" onChange={this.handleOnSelect}>
+           <select className="search-results" size={localStorage.getItem('numb_of_items')} className="sel" id="player" onChange={this.handleOnSelect}>
            {JSON.parse(localStorage.getItem('players_array')).map((player, key) => {
              return <option key={key} value={player}>{player}</option>
            })}
@@ -115,7 +110,7 @@
          </form>
          <div id="list">
          {localStorage.getItem('count') !== '0' ?
-         <table>
+         <table className="table">
            <thead>
              <tr>
                <th>Name</th>
@@ -162,6 +157,7 @@
          <button onClick={this.handleOnSubmit}>
          Return
          </button>
+         </div>
        </div>
        </>
      )
