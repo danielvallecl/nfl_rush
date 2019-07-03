@@ -211,7 +211,7 @@ class PlayerAll extends Component {
             <p>NFL - General Data</p>
           </div>
           <form action="#">
-          <div className="row sel">
+          <div className="selection">
           <label className="label">
             Player
             <input
@@ -330,14 +330,14 @@ class PlayerAll extends Component {
               </div>
             </div>
           </form>
-          <nav className="page" aria-label="Page navigation example">
+          <div className="page" aria-label="Page navigation example">
             <ul className="pagination">
               <small><li className="page-item"><a className="page-link" id="P" onClick={this.handlePageClick} href="#">Previous</a></li></small>
               <small><li className="page-item"><a className="page-link" id="1" onClick={this.handlePageClick} href="#">1</a></li></small>...
               <small><li className="page-item"><a className="page-link" id="L" onClick={this.handlePageClick} href="#">{parseInt(localStorage.getItem('last')) + 1}</a></li></small>
               <small><li className="page-item"><a className="page-link" id="N" onClick={this.handlePageClick} href="#">Next</a></li></small>
            </ul>
-          </nav>
+          </div>
       </div>
       </div>
       </>

@@ -8,6 +8,11 @@
   font-family: 'Roboto';
 }
 
+// ============ SASS VARIABLES ========= //
+
+$blue: #053b71;
+$red: #d8242e;
+
 // ============ NAVBAR ============ //
 
 .navbar {
@@ -24,7 +29,7 @@
 }
 
 .navbar-toggler-icon {
-  color: #d8242e;
+  color: $red;
 }
 
 .navbar-collapse {
@@ -38,10 +43,10 @@
 }
 
 .nav-link, .fa-search {
-  color: #d8242e;
+  color: $red;
   font-weight: bold;
 &:hover {
-    color: #053b71
+    color: $blue;
   }
 }
 
@@ -84,7 +89,7 @@
 
 .header {
   text-align: center;
-  background-color: #053b71;
+  background-color: $blue;
   color: white;
   font-size: 5vh;
   border-top-left-radius: 15px;
@@ -106,8 +111,9 @@
 .selection {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   font-size: 2.5vh;
-  color: #d8242e;
+  color: $red;
   font-weight: bold;
   margin: auto;
 }
@@ -131,7 +137,7 @@
 }
 
 th {
-  background-color: #053b71;
+  background-color: $blue;
   color: white;
   border: 1px solid white;
 }
@@ -139,7 +145,7 @@ th {
 td {
   padding: 8px;
   text-align: left;
-  border: 1px solid #053b71;
+  border: 1px solid $blue;
 }
 
 tbody {
@@ -152,6 +158,36 @@ tbody {
 
 tr:nth-child(even) {
   background-color: #f5f8f8;
+}
+
+.selection {
+  background-color: yellow;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  font-size: 2.5vh;
+  color: $red;
+  font-weight: bold;
+}
+
+//  =============== PAGINATION ================ //
+
+.pagination {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: 2.5vh;
+  color: $blue;
+  font-weight: bold;
+}
+
+.page-link {
+  background-color: $blue;
+  color: white;
+  &:hover {
+    background-color: $red;
+    color: white;
+  }
 }
 
 //  =============== ABOUT ================ //

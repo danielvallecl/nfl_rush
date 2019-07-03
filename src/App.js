@@ -15,6 +15,7 @@ import Search from './components/Search';
 
 // ======= CSS =======
 
+import './Normalize.css';
 import './App.scss';
 
 // ======= COMPONENT =======
