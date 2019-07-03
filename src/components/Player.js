@@ -13,7 +13,7 @@ class Player extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      data: require('../../nfl_data/rushing.json'),
+      data: require('../nfl_data/rushing.json'),
       player: '',
       team: '',
       selected: '',

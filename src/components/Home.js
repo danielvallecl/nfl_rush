@@ -9,8 +9,7 @@
 
  // ======== COMPONENTS ======== //
 
- import DashHome from "./dashboard/DashHome";
- import DashPlayer from "./dashboard/DashPlayer";
+ import PlayerAll from './PlayerAll';
 
 // ======== CSS ======== //
 
@@ -22,7 +21,7 @@
 
      return (
        <React.Fragment>
-           <DashHome />
+          <PlayerAll />
        </React.Fragment>
      );
    }

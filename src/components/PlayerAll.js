@@ -12,7 +12,7 @@ class PlayerAll extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      data: require('../../nfl_data/rushing.json'),
+      data: require('../nfl_data/rushing.json'),
       number_of_players: 0,
       selected: '',
       Player: true,
@@ -64,7 +64,6 @@ class PlayerAll extends Component {
     // Store partial array into localStorage
     localStorage.setItem('players_array', JSON.stringify(page_array));
   }
-
 
   // Input - Array of Players, page number and Itens per page_array
   // Returns a slice of the original array

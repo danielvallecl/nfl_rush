@@ -14,7 +14,7 @@ class Teams extends Component {
     super(props);
 
     this.state = {
-      data: require('../../nfl_data/rushing.json'),
+      data: require('../nfl_data/rushing.json'),
       player: '',
       teams: [],
       selected: '',
