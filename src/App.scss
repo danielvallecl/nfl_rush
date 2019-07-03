@@ -183,6 +183,10 @@ tr:nth-child(even) {
   padding: 1vh;
 }
 
+.check {
+  margin-left: 10px;
+}
+
 // ================ SEARCH ================= //
 
 .search-div {
@@ -193,7 +197,8 @@ tr:nth-child(even) {
 .search-results {
   width: 100%;
   text-align: center;
-  background-color: yellow;
+  font-size: 3vh;
+  color: $blue;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -213,9 +218,11 @@ tr:nth-child(even) {
   font-size: 2.5vh;
   color: $blue;
   font-weight: bold;
+  margin-top: 1.5vh;
 }
 
 .page-link {
+  margin: auto;
   background-color: $blue;
   color: white;
   &:hover {
