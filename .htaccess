@@ -1,3 +1,16 @@
-RewriteEngine on
-RewriteCond %{REQUEST_URI} !\.(?:css|js|jpe?g|gif|png)$ [NC]
-RewriteRule ^([a-zA-Z0-9\-\_\/]*)$ index.html?p=$1
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+
+#rule for site1.com to link to site1folder directory
+    RewriteCond %{HTTP_HOST} ^(www.)?danielvalle.ca$
+    RewriteCond %{REQUEST_URI} !^/
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ /$1
+    #rule for site2.com to link to site2folder directory. Its the same as above just with site2 URL and subfolder
+    RewriteCond %{HTTP_HOST} ^(www.)?danielvalle.ca$
+    RewriteCond %{REQUEST_URI} !^/nfl/
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ /nfl/$1

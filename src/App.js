@@ -33,8 +33,9 @@ function App() {
       <div className="">
       <Navbar />
         <Switch>
-          <Route exact path="/" component= {Home} />
-          <Route path="/home" component= {Home} />
+          <Route exact path="/" component={Home} />
+          <Route path="/nfl" component={Home} />
+          <Route path="/home" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/teams" component={Teams} />
           <Route path="/player" component={Player} />
