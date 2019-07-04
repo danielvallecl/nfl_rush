@@ -39,3 +39,15 @@ A live version of the application is also hosted on my personal website:
 ## Instructions
 
 ![Screenshot](interface.jpg)
+
+* The initial page shows all players sorted by name and paginated
+* The NFL logo on the left brings you back to the initial page
+
+### Navigation Menu Options:
+
+** Teams: Lets you select your preferred team and displays the player roster
+** Players: Lets you select and display your player and detailed data
+** About: Displays information about the NFL
+** Search: Lets you search players by typing parts of their name
+
+### Navigation Menu Options:
