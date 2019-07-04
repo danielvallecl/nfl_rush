@@ -6,8 +6,6 @@
  */
 
  import React, { Component } from 'react';
- import home from '../images/nfl.png';
-
 
  class Search extends Component {
    constructor(props) {
@@ -81,20 +79,19 @@
      const search = sessionStorage.getItem('search');
      const player_search = [];
      this.setState({ search });
+
      players_array.filter((player) => {
          if (player.toLowerCase().includes(sessionStorage.getItem('search').toLowerCase())) {
            player_search.push(player);
-           console.log(player);
          }
      });
+
      localStorage.setItem('numb_of_items', player_search.length);
      localStorage.setItem('players_array', JSON.stringify(player_search));
    }
 
    render() {
-     const divOpacity = {
- 			opacity: this.state.opacity,
- 		};
+
      const data = [...this.state.data];
 
      return(

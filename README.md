@@ -1,6 +1,6 @@
 # NFL Rush
 
-An App built with React to sort out data about NFL players.
+An App built with React to sort data about NFL Players.
 
 ## Getting Started
 
@@ -8,7 +8,9 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-Node.js, React
+Node.js
+React
+React-Router
 
 ### Installing
 
@@ -31,6 +33,14 @@ npm start
 ```
 
 The app will open on port 3000 on your browser.
+
+To host the application, please run:
+
+```
+npm run build
+```
+
+And move it to the host server.
 
 A live version of the application is also hosted on my personal website:
 

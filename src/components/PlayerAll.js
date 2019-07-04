@@ -135,7 +135,8 @@ class PlayerAll extends Component {
   // return - Saved CSV file based on sorted array
   saveCsv = (array) => {
     let first = false;
-    let csvContent = "data:text/csv;charset=utf-8," + ("\r\n");
+    let csvContent = "data:text/csv;charset=utf-8,";
+
     array.map((row) => {
       Object.entries(row).map((item) => {
         if (first !== false) {
@@ -147,6 +148,7 @@ class PlayerAll extends Component {
       first = true;
       csvContent = csvContent.replace(/.$/,"\r\n");
     })
+
     let encoded = encodeURI(csvContent);
     let link = document.createElement("a");
     link.setAttribute("href", encoded);
