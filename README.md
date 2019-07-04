@@ -40,14 +40,24 @@ A live version of the application is also hosted on my personal website:
 
 ![Screenshot](interface.jpg)
 
-* The initial page shows all players sorted by name and paginated
+* The initial page shows all players sorted by name with pagination
 * The NFL logo on the left brings you back to the initial page
 
+## Home Page
+
+* Page Number: displays the current selected page
+* Player: sorts data by player name
+* Rushing Yards: sorts data by rushing yards
+* Longest rush: sorts data by longest rush
+* Total Rushing TD: sorts data by TD
+* Ascending: a toggleable option that alternates sort method between Ascending and Descending
+* Save CSV: enables download of a CSV file when a sort option is selected
+
+* Pagination: starts at Page 1 and allows navigation back and forth through the pages
+
 ### Navigation Menu Options:
 
-** Teams: Lets you select your preferred team and displays the player roster
-** Players: Lets you select and display your player and detailed data
-** About: Displays information about the NFL
-** Search: Lets you search players by typing parts of their name
-
-### Navigation Menu Options:
+* Teams: Lets you select your preferred team and displays the player roster
+* Players: Lets you select and display your player and detailed data
+* About: Displays information about the NFL
+* Search: Lets you search players by typing parts of their name
