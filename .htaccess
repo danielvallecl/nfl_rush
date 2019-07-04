@@ -8,7 +8,9 @@ RewriteRule ^index\.php$ - [L]
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^(.*)$ /$1
-    #rule for site2.com to link to site2folder directory. Its the same as above just with site2 URL and subfolder
+
+    #NFL_RUSH
+
     RewriteCond %{HTTP_HOST} ^(www.)?danielvalle.ca$
     RewriteCond %{REQUEST_URI} !^/nfl/
     RewriteCond %{REQUEST_FILENAME} !-f
